@@ -1,0 +1,1 @@
+print("My name is agampreet.\nI have copleted my schooling from VIS dwarka \nI have completed my graduation from JIMS Vasant kunj  \nI also have a work ex of 2.4 years \nyours faithful \nAgampreet singh")
