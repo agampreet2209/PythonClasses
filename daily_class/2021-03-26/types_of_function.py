@@ -37,3 +37,11 @@ def just_hello(fname, lname):
 just_hello("agampreet","singh" )
 just_hello("singh", "agampreet")
 just_hello(lname = "singh", fname = "agampreet")
+
+def hello_to_all(*args):  #doubt error 
+for a in args:
+print("hello" ,a)	
+hello_to_all("hello")
+
+
+
