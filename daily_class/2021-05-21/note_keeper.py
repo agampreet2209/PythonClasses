@@ -17,6 +17,7 @@ def readANote():
 	except:
 		print("Erorr: Note Doesn't exist")
 
+
 def createANote():
 	try:
 		noteFile = open(note_title, "x")
@@ -25,6 +26,7 @@ def createANote():
 		note = input("Please enter your notes : ")
 
 		noteFile.write(note)
+		
 
 		print("Notes saved.")
 
@@ -36,15 +38,10 @@ def createANote():
 def appendANote():
 	try:
 		readANote()
-
 		noteFile = open(note_title, "a")
-		
 		note = input("Please enter your notes : ")
-
 		noteFile.write(note)
-
 		print("Notes saved.")
-
 		noteFile.close()
 	except:
 		print("Error: Cannot append to note.")
@@ -52,7 +49,6 @@ def appendANote():
 
 def deleteANote():
 	try:
-		
 		if os.path.exists(note_title):
 			readANote()
 			confirmation = input(f'\nAre you sure to Delete {note_title} (y/n) : ')
